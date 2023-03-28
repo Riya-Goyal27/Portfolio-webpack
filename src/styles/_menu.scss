@@ -1,0 +1,136 @@
+.menu{
+    z-index: 100;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: $color1;
+    width: 320px;
+    height: 100vh;
+    transform: translateX(-320px);
+    transition: transform 0.5s ease-in;
+
+    &--translate{
+    transform: translateX(0);
+    }
+
+    &__title{
+        display: none;
+    }
+
+    &__close{
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        cursor: pointer;
+
+        &__i{
+            font-size: 30px;
+            padding: 20px 45px 20px 12px;
+        }
+
+    }
+
+    &__options{
+        cursor: pointer;
+
+        &__li{
+            border-top: 1px solid $color3;
+            border-bottom: 1px solid $color3;
+            padding: 14px 35px;
+        }
+
+        &__li:hover{
+            color: $color2;
+        }
+
+        &__highlight{
+            color: $color2;
+        }
+    }
+
+    &__icons{
+        width: 220px;
+        display: flex;
+        justify-content: space-between;
+        margin: 50px auto;
+        cursor: pointer;
+
+
+        &__i{
+            font-size: 26px;
+        }
+    }
+
+    &__copyright{
+        display: none;
+    }
+
+    // &__icon{
+    //     background: url('./../assets/css_sprites.png') -75px -10px;
+    //     height: 25px;
+    //     width: 25px;
+    //     background-size: 140px;
+    // }
+}
+
+@media (min-width:1100px){
+
+    .menu{
+        transform: translateX(0px);
+        width: 220px;
+        transition: none;
+        // position: relative;
+
+        &__close{
+            display: none;
+        }
+
+        &__title{
+            display: block;
+            padding: 50px 45px;
+
+            &__img{
+                height: 70px;
+            }
+        }
+
+        &__options{
+            // margin: 110px 0;
+            &__li{
+                border:none;
+                font-size: 16px;
+                padding: 12px 45px;
+            }
+
+            &__li:hover{
+                color: $color4;
+                padding-left: 49px;
+            }
+
+            &__highlight{
+                color: $color4;
+            }
+        }
+
+        &__icons{
+            width: 120px;
+            margin: 20px 45px;
+            &__i{
+                font-size: 15px;
+            }
+        }
+
+        &__copyright{
+            display: block;
+            font-weight: normal;
+            color: $color6;
+            padding-left: 45px;
+            padding-top: 25px;
+        }
+    }
+}
+
+.down{
+    position: absolute;
+    bottom: 40px;
+}

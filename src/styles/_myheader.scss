@@ -1,0 +1,42 @@
+
+.myheader{
+    &__div{
+        height: 90px;
+        width: 100vw;
+        position: fixed;
+        top:0;
+        background-color: $color1;
+        z-index: 10;
+    }
+
+    &__container{
+        min-width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+    
+    &__logo{
+        height: 70px;
+    }
+    
+    &__bars{
+        position: absolute;
+        left:20px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+}
+
+
+@media (min-width:1100px){
+
+    .myheader{
+
+        &__div{
+            display: none;
+        }
+        
+    }
+}

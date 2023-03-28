@@ -1,0 +1,84 @@
+.details{
+    background-color: #faf7f7;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+
+    &__content{
+        width: 100%;
+        padding: 20px 50px;
+
+        &__title{
+            color: #777;
+            font-size: 17px;
+            padding: 20px 0;
+        }
+
+        &__text{
+            font-size: 25px;
+        }
+
+        &__hover:hover{
+            color: $color2;
+            cursor: pointer;
+        }
+    }
+
+    .form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 20px;
+
+        &__row{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            // flex-direction: column;
+        }
+
+        &__input{
+            box-sizing: border-box;
+            width: 100%;
+            margin: 15px 0;
+            font-size: 17px;
+            padding: 25px; 
+            border: 2.5px solid #efefef;
+            color: $color6;
+            outline: none;
+        }
+
+        &__btn{
+            margin: 40px 0;
+        }
+
+        #form__message{
+            padding-bottom: 100px;
+        }
+    }
+}
+
+@media (min-width:850px){
+
+    .details{
+        justify-content: space-around;
+        &__content{
+            width: 30%;
+        }
+        .form{
+            width: 50%;
+        }
+    }
+}
+
+@media (min-width:1100px){
+
+    .details{
+        justify-content: space-between;
+    }
+}
+
+//flex property in form inputs

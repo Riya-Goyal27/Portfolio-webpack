@@ -1,0 +1,85 @@
+.myslider{
+    margin: 90px 0 30px 0;
+
+    .swiper--swiper1{
+        height: 100vh;
+      }
+
+      .swiper__content{
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        &__content__div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        } 
+      }
+
+      .swiper__text{
+        margin-bottom: 50px;
+        
+        &__p{
+            color: white;
+            font-size: 60px;
+            text-align: center;
+          }
+      }
+
+      .swiper__button1{
+        @extend %btn;
+        background-color: $color3;
+        color: $color4;
+        box-shadow: none;
+      }
+
+      .swiper__button1:hover{
+        box-shadow: none;
+        background-color: $color2;
+        color: $color1;
+      }
+
+      .swiper__button2{
+        @extend %btn;
+        box-shadow: none;
+      }
+
+      .swiper__button2:hover{
+        box-shadow: none;
+        background-color: $color3;
+        color: $color4;
+      }
+
+      .swiper__button3{
+        @extend %btn;
+      }
+}
+
+@media (min-width:850px){
+    .myslider{
+          .swiper__text{            
+            &__p{
+                font-size: 80px;
+              }
+          }
+    }
+    
+}
+
+@media (min-width:1100px){
+    .myslider{
+            margin-top: 0px;
+          .swiper__text{            
+            &__p{
+                font-size: 100px;
+              }
+          }
+    }
+    
+}

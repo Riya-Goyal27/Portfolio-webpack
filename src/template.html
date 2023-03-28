@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <title>Webpack App</title>
+</head>
+<body>
+    <div class="maincontainer">
+        <!-- header -->
+        <header class="myheader">
+            <div class="myheader__div">
+                <div class="myheader__container">
+                    <svg class="svg-icon myheader__bars">
+                        <use xlink:href="sprite.svg#bars-staggered-solid"></use>
+                    </svg>
+                    <img src="./assets/logo.png" alt="logo" class="myheader__logo">
+                </div>
+            </div>
+            <!-- navbar -->
+            <nav class="menu">
+                <div class="menu__close">
+                    <span class="menu__close__text">close</span>
+                    <i class="fa-sharp fa-solid fa-xmark menu__close__i"></i>
+                </div>
+                <div class="menu__title">
+                    <img src="./assets/logo.png" src="logo" class="menu__title__img">
+                </div>
+                <ul class="menu__options">
+                    <li class="menu__options__li menu__options__highlight">home</li>
+                    <li class="menu__options__li">pages</li>
+                    <li class="menu__options__li">portfolio</li>
+                    <li class="menu__options__li">blog</li>
+                    <li class="menu__options__li">shop</li>
+                    <li class="menu__options__li">elements</li>
+                </ul>
+                <div class="down">
+                <div class="menu__icons">
+                    <svg class="svg-icon">
+                        <use xlink:href="sprite.svg#square-facebook" class="menu__icons__i"/>                    
+                    </svg>
+                    <svg class="svg-icon">
+                        <use xlink:href="sprite.svg#twitter" class="menu__icons__i"></use>
+                    </svg>
+                    <svg class="svg-icon">
+                        <use xlink:href="sprite.svg#instagram" class="menu__icons__i"></use>
+                    </svg>
+                    <svg class="svg-icon">
+                        <use xlink:href="sprite.svg#dribbble" class="menu__icons__i"></use>
+                    </svg>
+                    <svg class="svg-icon">
+                        <use xlink:href="sprite.svg#cart-shopping-solid" class="menu__icons__i"></use>
+                    </svg> 
+                </div>
+                <div class="menu__copyright">
+                    <p class="menu__copyright__text">© Awa Sudio.</p>
+                    <p class="menu__copyright__text">All Right Reserved 2018.</p>
+                </div>
+                </div>
+            </nav>
+        </header>
+        <div class="mywrapper">
+            <!-- slider -->
+            <section class="myslider">
+                <div class="swiper swiper--swiper1 mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/image1.jpg" alt="image1" class="slider__image">
+                            <div class="swiper__content">
+                                <div class="swiper__content__div">
+                                    <div class="swiper__text">
+                                        <p class="swiper__text__p">make</p>
+                                        <p class="swiper__text__p">incredible</p>
+                                    </div>
+                                    <button class="swiper__button1">learn more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/image2.jpg" alt="image2" class="slider__image">
+                            <div class="swiper__content">
+                                <div class="swiper__content__div">
+                                    <div class="swiper__text">
+                                        <p class="swiper__text__p">creative</p>
+                                        <p class="swiper__text__p">studio</p>
+                                    </div>
+                                    <button class="swiper__button2">learn more</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/image3.jpg" alt="image3" class="slider__image">
+                            <div class="swiper__content">
+                                <div class="swiper__content__div">
+                                    <div class="swiper__text">
+                                        <p class="swiper__text__p">modern</p>
+                                        <p class="swiper__text__p">design</p>
+                                    </div>
+                                    <button class="swiper__button3">learn more</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- about -->
+            <section class="about">
+                <div class="about__container">
+                    <div class="about__left">
+                        <p class="about__title">about</p>
+                        <div class="about__left__image"></div>
+                    </div>
+                    <div class="about__content">
+                        <p class="about__content__title">about us</p>
+                        <p class="about__content__text">we're awa, a small design agency based in los angeles.</p>
+                        <div class="about__content__div">
+                            <p class="about__content__p">view more</p>
+                        </div>
+                    </div>
+                    <div class="about__image"></div>
+                    <div class="about__dots about__dots--1"></div>
+                    <div class="about__dots about__dots--2"></div>
+                </div>
+            </section>
+
+            <!-- latest work -->
+            <section class="work">
+                <div class="work__container">
+                    <div class="work__content">
+                        <div class="work__content__text">
+                            <p class="work__content__title about__content__title">latest works</p>
+                            <p class="work__content__info about__content__text">take a look around<br> our portfolio.</p>
+                        </div>
+                        <button class="work__btn">more works</button>
+                    </div>
+                    <p class="work__title about__title">works</p>
+                </div>
+            </section>
+
+            <!-- services -->
+            <section class="services">
+                <div class="services__text">
+                    <p class="services__text__title">our services</p>
+                    <p class="services__text__desc">we love to find simple solutions to complex challenges.</p>
+                </div>
+                <div class="services__boxes">
+                    <div class="services__box">
+                        <svg class="svg-icon">
+                            <use xlink:href="sprite.svg#layer-group-solid" class="services__icon services__icon--style1"></use>
+                        </svg>
+                        <p class="services__box__text1">user experience</p>
+                        <p class="services__box__text2">Vestibulum condimentum vehicula massa, ac convallis nullarell.</p>
+                    </div>
+                    <div class="services__box">
+                        <svg class="svg-icon">
+                            <use xlink:href="sprite.svg#bookmark-regular" class="services__icon services__icon--style2"></use>
+                        </svg>
+                        <p class="services__box__text1">interface design</p>
+                        <p class="services__box__text2">Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.</p>
+                    </div>
+                    <div class="services__box">
+                        <svg class="svg-icon">
+                            <use xlink:href="sprite.svg#mobile-screen-solid "  class="services__icon services__icon--style1"></use>
+                        </svg>
+                        <p class="services__box__text1">mobile apps</p>
+                        <p class="services__box__text2">Maecenas iaculis metus libero, vitae faucibus orci lacinia eunde.</p>
+                    </div>
+                    <div class="services__box">
+                        <svg class="svg-icon">
+                            <use xlink:href="sprite.svg#gear-solid"  class="services__icon services__icon--style2"></use>
+                        </svg>
+                        <p class="services__box__text1">help when need</p>
+                        <p class="services__box__text2">Quisque facilisis, sem in suscipit sagittis, nisl turpis ullamcorper enim.</p>
+                    </div>
+                    <div class="services__box">
+                        <svg class="svg-icon">
+                            <use xlink:href="sprite.svg#globe-solid "  class="services__icon services__icon--style1"></use>
+                        </svg>
+                        <p class="services__box__text1">we can travel</p>
+                        <p class="services__box__text2">Nullam tristique faucibus arcu, id varius ipsum ultrices id.</p>
+                    </div>
+                    <div class="services__box">
+                        <svg class="svg-icon">
+                            <use xlink:href="sprite.svg#clock-regular"  class="services__icon services__icon--style2"></use>
+                        </svg>
+                        <p class="services__box__text1">timely deliverables</p>
+                        <p class="services__box__text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit et terre.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- testimonials -->
+            <!-- <section class="testimonials">
+                <div class="testimonials__content">
+                    <p class="testimonials__content--text1">testimonials</p>
+                    <p class="testimonials__content--text2">meet happy clients.</p>
+                </div>
+                <div class="swiper swiper2 mySwiper2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="swiper2__slide">
+                            <div class="swiper2__content">
+                                <div class="swiper2__content--rating">
+                                    <svg class="svg-icon swiper2__content--icon">
+                                        <use xlink:href="sprite.svg#star-solid"></use>
+                                    </svg>
+                                    <svg class="svg-icon swiper2__content--icon">
+                                        <use xlink:href="sprite.svg#star-solid"></use>
+                                    </svg>
+                                    <svg class="svg-icon swiper2__content--icon">
+                                        <use xlink:href="sprite.svg#star-solid"></use>
+                                    </svg>
+                                    <svg class="svg-icon swiper2__content--icon">
+                                        <use xlink:href="sprite.svg#star-solid"></use>
+                                    </svg>
+                                    <svg class="svg-icon swiper2__content--icon">
+                                        <use xlink:href="sprite.svg#star-solid"></use>
+                                    </svg>
+                                </div>
+                                <p class="swiper2__content--text">“Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed vel arcu vitae ex tincidunt blandit a id lorem.”</p>
+                            </div>
+                            <div class="swiper2__people">
+                                <img src="./assets/team01.jpg" alt="team01" class="swiper2__people--image">
+                                <div class="swiper2__people--text">
+                                    <p class="swiper2__people--text1">Blanche Fields</p>
+                                    <p class="swiper2__people--text2">Amazon, Web Developer</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper2__slide">
+                            <div class="swiper2__content">
+                                <div class="swiper2__content--rating">
+                                    <svg class="svg-icon swiper2__content--icon">
+                                        <use xlink:href="sprite.svg#star-solid"></use>
+                                    </svg>
+                                    <svg class="svg-icon swiper2__content--icon">
+                                        <use xlink:href="sprite.svg#star-solid"></use>
+                                    </svg>
+                                    <svg class="svg-icon swiper2__content--icon">
+                                        <use xlink:href="sprite.svg#star-solid"></use>
+                                    </svg>
+                                    <svg class="svg-icon swiper2__content--icon">
+                                        <use xlink:href="sprite.svg#star-solid"></use>
+                                    </svg>
+                                    <svg class="svg-icon swiper2__content--icon">
+                                        <use xlink:href="sprite.svg#star-solid"></use>
+                                    </svg>
+                                </div>
+                                <p class="swiper2__content--text">“Aliquam interdum est eget magna ultricies porta. Integer eget feugiat justo, vitae blandit oren ite.”</p>
+                            </div>
+                            <div class="swiper2__people">
+                                <img src="./assets/team04.jpg" alt="team04" class="swiper2__people--image">
+                                <div class="swiper2__people--text">
+                                    <p class="swiper2__people--text1">Jessy Rose</p>
+                                    <p class="swiper2__people--text2">FeedEx, IT Director</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper2__slide">
+                            <div class="swiper2__content">
+                                <div class="swiper2__content--rating">
+                                    <svg class="svg-icon swiper2__content--icon">
+                                        <use xlink:href="sprite.svg#star-solid"></use>
+                                    </svg>
+                                    <svg class="svg-icon swiper2__content--icon">
+                                        <use xlink:href="sprite.svg#star-solid"></use>
+                                    </svg>
+                                    <svg class="svg-icon swiper2__content--icon">
+                                        <use xlink:href="sprite.svg#star-solid"></use>
+                                    </svg>
+                                    <svg class="svg-icon swiper2__content--icon">
+                                        <use xlink:href="sprite.svg#star-solid"></use>
+                                    </svg>
+                                    <svg class="svg-icon swiper2__content--icon">
+                                        <use xlink:href="sprite.svg#star-solid"></use>
+                                    </svg>
+                                </div>
+                                <p class="swiper2__content--text">“Pellentesque dapibus elementum mi nec sodales. Etiam ac aliquet nulla. Proin accumsan ullap.”</p>
+                            </div>
+                            <div class="swiper2__people">
+                                <img src="./assets/team02.jpg" alt="team02" class="swiper2__people--image">
+                                <div class="swiper2__people--text">
+                                    <p class="swiper2__people--text1">Mike Farrell</p>
+                                    <p class="swiper2__people--text2">Apple, CTO</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper2__slide">
+                            <div class="swiper2__content">
+                                <div class="swiper2__content--rating">
+                                    <svg class="svg-icon swiper2__content--icon">
+                                        <use xlink:href="sprite.svg#star-solid"></use>
+                                    </svg>
+                                    <svg class="svg-icon swiper2__content--icon">
+                                        <use xlink:href="sprite.svg#star-solid"></use>
+                                    </svg>
+                                    <svg class="svg-icon swiper2__content--icon">
+                                        <use xlink:href="sprite.svg#star-solid"></use>
+                                    </svg>
+                                    <svg class="svg-icon swiper2__content--icon">
+                                        <use xlink:href="sprite.svg#star-solid"></use>
+                                    </svg>
+                                    <svg class="svg-icon swiper2__content--icon">
+                                        <use xlink:href="sprite.svg#star-solid"></use>
+                                    </svg>
+                                </div>
+                                <p class="swiper2__content--text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dignissim eleifend accumsan. Morbi placerat justo at nulla posuere.”</p>
+                            </div>
+                            <div class="swiper2__people">
+                                <img src="./assets/team06.jpg" alt="team06" class="swiper2__people--image">
+                                <div class="swiper2__people--text">
+                                    <p class="swiper2__people--text1">Camilla Shean</p>
+                                    <p class="swiper2__people--text2">Google, CEO</p>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-pagination swiper2__pagination">
+                    </div>
+                  </div>
+            </section> -->
+
+            <!-- achivements -->
+            <section class="achievements">
+                <div class="achievements__content">
+                    <p class="achievements__content__figure">99%</p>
+                    <p class="achievements__content__text">satisfied</p>
+                </div>
+                <div class="achievements__content">
+                    <p class="achievements__content__figure">2034</p>
+                    <p class="achievements__content__text">unique designs</p>
+                </div>
+                <div class="achievements__content">
+                    <p class="achievements__content__figure">+580</p>
+                    <p class="achievements__content__text">projects</p>
+                </div>
+                <div class="achievements__content">
+                    <p class="achievements__content__figure">789</p>
+                    <p class="achievements__content__text">coffee cups</p>
+                </div>
+            </section>
+
+            <!-- contact -->
+            <section class="contact">
+                <div class="contact__left">
+                    <p class="contact__left__text1">create the lifestyle you</p>
+                    <p class="contact__left__text2">really desire.</p>
+                    <p class="contact__left__text3">Success is no accident. It is hard work, perseverance, learning, studying, sacrifice and most of all, love of what you are doing or learning to do.</p>
+                    <ul class="contact__left__ul">
+                        <li class="contact__left__li">beautiful and easy to professional animations</li>
+                        <li class="contact__left__li">theme advantages are pixel perfect design</li>
+                        <li class="contact__left__li">find more creative ideas for your projects</li>
+                    </ul>
+                    <button class="contact__left__btn">contact us</button>
+                </div>
+                <div class="contact__right">
+                    <img src="./assets/contact.jpg" alt="contact" class="contact__right__img">
+                </div>
+            </section>
+
+            <!-- team -->
+            <section class="team">
+                <div class="team__member">
+                    <img src="./assets/team01.jpg" alt="team01" class="team__member__img">
+                    <div class="team__text">
+                        <div class="team__text__div">
+                            <p class="team__text__text1">Blanche Fields</p>
+                        </div>
+                        <p class="team__text__text2">Amazon, Web Developer</p>
+                        <div class="team__text__icons">
+                            <svg class="svg-icon team__text__icons__i">
+                                <use xlink:href="sprite.svg#square-facebook"></use>
+                            </svg>
+                            <svg class="svg-icon team__text__icons__i">
+                                <use xlink:href="sprite.svg#twitter"></use>
+                            </svg>
+                            <svg class="svg-icon team__text__icons__i">
+                                <use xlink:href="sprite.svg#instagram"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="team__member">
+                    <img src="./assets/team02.jpg" alt="team02" class="team__member__img">
+                    <div class="team__text">
+                        <div class="team__text__div">
+                            <p class="team__text__text1">Mike Farrell</p>
+                        </div>
+                        <p class="team__text__text2">Apple, CTO</p>
+                        <div class="team__text__icons">
+                            <svg class="svg-icon team__text__icons__i">
+                                <use xlink:href="sprite.svg#square-facebook"></use>
+                            </svg>
+                            <svg class="svg-icon team__text__icons__i">
+                                <use xlink:href="sprite.svg#twitter"></use>
+                            </svg>
+                            <svg class="svg-icon team__text__icons__i">
+                                <use xlink:href="sprite.svg#instagram"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="team__member">
+                    <img src="./assets/team04.jpg" alt="team04" class="team__member__img">
+                    <div class="team__text">
+                        <div class="team__text__div">
+                            <p class="team__text__text1">Jessy Rose</p>
+                        </div>
+                        <p class="team__text__text2">FeedEx, IT Director</p>
+                        <div class="team__text__icons">
+                            <svg class="svg-icon team__text__icons__i">
+                                <use xlink:href="sprite.svg#square-facebook"></use>
+                            </svg>
+                            <svg class="svg-icon team__text__icons__i">
+                                <use xlink:href="sprite.svg#twitter"></use>
+                            </svg>
+                            <svg class="svg-icon team__text__icons__i">
+                                <use xlink:href="sprite.svg#instagram"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="team__member">
+                    <img src="./assets/team06.jpg" alt="team06" class="team__member__img">
+                    <div class="team__text">
+                        <div class="team__text__div">
+                            <p class="team__text__text1">Camilla Shean</p>
+                        </div>
+                        <p class="team__text__text2">Google, CEO</p>
+                        <div class="team__text__icons">
+                            <svg class="svg-icon team__text__icons__i">
+                                <use xlink:href="sprite.svg#square-facebook"></use>
+                            </svg>
+                            <svg class="svg-icon team__text__icons__i">
+                                <use xlink:href="sprite.svg#twitter"></use>
+                            </svg>
+                            <svg class="svg-icon team__text__icons__i">
+                                <use xlink:href="sprite.svg#instagram"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- news -->
+            <section class="news">
+                <div class="news__text">
+                    <p class="news__text__title about__content__title">the daily planet</p>
+                    <p class="news__text__desc about__content__text">our interactive news.</p>
+                </div>
+                <div class="news__photos">
+                    <div class="news__photos__div">
+                        <img src="./assets/news1.jpg" alt="news1" class="news__photos__img">
+                        <div class="news__photos__text">
+                            <span class="news__photos__text1">photo</span>
+                            <span class="news__photos__text2">•</span>
+                            <span class="news__photos__text3">February 23, 2018</span>
+                        </div>
+                        <p class="news__photos__text4">obsession with all things</p>
+                        <div class="about__content__div">
+                            <p class="about__content__p">view more</p>
+                        </div>
+                    </div>
+                    <div class="news__photos__div">
+                        <img src="./assets/news2.jpg" alt="news2" class="news__photos__img">
+                        <div class="news__photos__text">
+                            <span class="news__photos__text1">branding</span>
+                            <span class="news__photos__text2">•</span>
+                            <span class="news__photos__text3">March 14, 2017</span>
+                        </div>
+                        <p class="news__photos__text4">ways to quickly increase traffic to your website</p>
+                        <div class="news__btn">
+                            <div class="news__btn__div about__content__div">
+                                <p class="news__btn__p about__content__p">view more</p>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="news__photos__div">
+                        <img src="./assets/news3.jpg" alt="news3" class="news__photos__img">
+                        <div class="news__photos__text">
+                            <span class="news__photos__text1">photo</span>
+                            <span class="news__photos__text2">•</span>
+                            <span class="news__photos__text3">March 13, 2017</span>
+                        </div>
+                        <p class="news__photos__text4">breaking the rules: using sqlite to demo web</p>
+                        <div class="about__content__div">
+                            <p class="about__content__p">view more</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- details -->
+            <section class="details">
+                <div class="details__content">
+                    <div class="details__content__div">
+                       <p class="details__content__title">Address:</p> 
+                       <p class="details__content__text">14 tottenham road,<br>london, england</p>
+                    </div>
+                    <div class="details__content__div">
+                        <p class="details__content__title">Information:</p> 
+                        <p class="details__content__text details__content__hover">info@yourdomain.com</p>
+                        <p class="details__content__text details__content__hover">(+68) 12004509</p>
+                    </div>
+                </div>
+                <form class="form">
+                    <div class="form__row">
+                    <input type="text" placeholder="Your name*" id="form__name" class="form__input" required>
+                    <input type="email" placeholder="Your e-mail*" id="form__email" class="form__input" required>
+                    </div>
+                    <input type="text" placeholder="Your message*" id="form__message" class="form__input" required>
+                    <button class="form__btn work__btn">send mess</button>
+                </form>
+            </section>
+
+            <!-- footer -->
+            <footer class="footer">
+                <div class="footer__div">
+                    <img src="./assets/logo2.png" alt="logo" class="footer__logo">
+                    <p class="footer__text">follow us on <span class="footer__span">awastud.io</span></p>
+                </div>
+                <div class="footer__div">
+                    <p class="footer__title">leave a message</p>
+                    <p class="footer__text">info@yourdomain.com<br>(+68) 120034509</p>
+                </div>
+                <div class="footer__div">
+                    <p class="footer__title">explore</p>
+                    <p class="footer__text">About us<br>Contact Us<br>blog<br>Career</p>
+                </div>
+                <div class="footer__div">
+                    <p class="footer__title">studio</p>
+                    <p class="footer__text">2005 Stokes Isle Apt. 896, Venaville, New York 10010, USA</p>
+                </div>
+            </footer>
+        </div>
+
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+</body>
+</html>
+

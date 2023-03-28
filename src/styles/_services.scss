@@ -1,0 +1,107 @@
+.services{
+    text-align: center;
+    padding: 40px 20px;
+
+    &__text{
+        margin: 30px 0;
+        
+        &__title{
+            color: $color2;
+            font-size: 20px;
+        }
+        &__desc{
+            font-size: 35px;
+            margin: 20px 0;
+        }
+    }
+
+    &__boxes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    &__box{
+        width: 70%;
+        border: 2px solid $color3;
+        padding: 40px 50px;
+        margin: 20px 0;
+        transition: all 0.3s ease-in;
+
+        &__text1{
+            font-size: 25px;
+            margin-top: 20px;
+        }
+
+        &__text2{
+            color: $color6;
+            font-weight: normal;
+            font-size: 17px;
+            margin: 20px 0;
+        }
+    }
+
+    &__icon{
+        font-size: 55px;
+
+        &--style1{
+            color: $color2;
+        }
+
+        &--style2{
+            color: $color5;
+        }
+    }
+
+    &__box:hover{
+        background-color: $color2;
+        border: none;
+        box-shadow: -10px -10px $color5;
+    }
+
+    &__box:hover &__box__text1{
+        color: $color1;
+    }
+
+    &__box:hover &__box__text2{
+        color: $color1;
+    }
+
+    &__box:hover &__icon{
+        color: $color1;
+    }
+}
+
+@media (min-width:850px){
+    .services{
+        &__text__desc{
+            font-size: 40px;
+        }
+       
+        &__box{
+            width: 35%;
+        }
+    }
+}
+
+
+@media (min-width:1260px){
+    .services{
+
+        &__text__desc{
+            font-size: 50px;
+        }
+
+        &__box{
+            width: 20%;
+        }
+        &__box:hover{
+            box-shadow: -14px -14px $color5;
+        }
+
+        &__icon{
+            text-align: left;
+        }
+        
+    }
+}
